@@ -1,0 +1,242 @@
+\hypertarget{class_client}{}\doxysection{Client Class Reference}
+\label{class_client}\index{Client@{Client}}
+
+
+{\ttfamily \#include $<$Client.\+h$>$}
+
+Inheritance diagram for Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_client}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_ae51af7aa6b8f591496a8f6a4a87a14bf}{Client}} ()
+\item 
+\mbox{\hyperlink{class_client_ad9a4f9b218d23810f318312b5ca86eeb}{Client}} (const sf\+::\+Ip\+Address \&\mbox{\hyperlink{class_client_a4f1a2d4904133226474bac377338bfd3}{server\+IP}}, const unsigned short \mbox{\hyperlink{class_client_ab93dfe4f9ac1878682378294093492eb}{server\+Port}})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_client}{Client}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_a840e519ca781888cbd54181572ebe3a7}{$\sim$\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Default client destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a359739519699ffbe1d14ccc891c8bf02}{Send\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em Sends packet to client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a54794620e741e612561da434f95762ab}{Send\+Ack}} ()
+\begin{DoxyCompactList}\small\item\em Sends acknowledgement to client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a52be591a9f20eafe3ab4c7e5598665ad}{Receive\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em Receives packet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a9e0283c625e8152b8b85bf6528375357}{Init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes game sequence. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_acca1cb65811dde32938f8a3149b6e0d1}{SendL}} ()
+\begin{DoxyCompactList}\small\item\em Sends L number to server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a11b6e7072e7603032be9fd3745ce1cc4}{Play\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Manages gameplay phase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Udp\+Socket \mbox{\hyperlink{class_client_aa42a2692e6aec62bca89e7c7559d1a46}{client\+Socket}}
+\item 
+\mbox{\hyperlink{class_packet}{Packet}} \mbox{\hyperlink{class_client_afe98ae066f7dd58e8cf403cbfc847f3e}{packet}}
+\item 
+unsigned short \mbox{\hyperlink{class_client_ab93dfe4f9ac1878682378294093492eb}{server\+Port}}
+\item 
+sf\+::\+Ip\+Address \mbox{\hyperlink{class_client_a4f1a2d4904133226474bac377338bfd3}{server\+IP}}
+\item 
+sf\+::\+Ip\+Address \mbox{\hyperlink{class_client_a399299a8f9fe8b014b9b24385cf827c3}{client\+IP}} = \char`\"{}169.\+254.\+247.\+66\char`\"{}
+\item 
+int \mbox{\hyperlink{class_client_a7b47c29b48f3a2eb5bf4e6d7e60e0d9f}{range\+Begin}}
+\item 
+int \mbox{\hyperlink{class_client_a7ed7c5741aa95376095b1c8d71164239}{range\+End}}
+\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_client_aaf1f10098987626dc6eba0504528549d}{operation}}
+\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_client_a87a08064c88cbdbe8220d11d6d01eb7c}{answer}}
+\item 
+int \mbox{\hyperlink{class_client_a74f7768f7785f2dfefbb2b052010c475}{counter\+Overflow}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_client_ae51af7aa6b8f591496a8f6a4a87a14bf}\label{class_client_ae51af7aa6b8f591496a8f6a4a87a14bf}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_client_ad9a4f9b218d23810f318312b5ca86eeb}\label{class_client_ad9a4f9b218d23810f318312b5ca86eeb}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{const sf\+::\+Ip\+Address \&}]{server\+IP,  }\item[{const unsigned short}]{server\+Port }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_client}{Client}} constructor. 
+
+Binds socket to random available port, sets server port and IP to class variables. 
+\begin{DoxyParams}{Parameters}
+{\em server\+IP} & \mbox{\hyperlink{class_server}{Server}} IP address written to class variable. \\
+\hline
+{\em server\+Port} & \mbox{\hyperlink{class_server}{Server}} port address written to class variable. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_a840e519ca781888cbd54181572ebe3a7}\label{class_client_a840e519ca781888cbd54181572ebe3a7}} 
+\index{Client@{Client}!````~Client@{$\sim$Client}}
+\index{````~Client@{$\sim$Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{$\sim$Client()}{~Client()}}
+{\footnotesize\ttfamily Client\+::$\sim$\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default client destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_a9e0283c625e8152b8b85bf6528375357}\label{class_client_a9e0283c625e8152b8b85bf6528375357}} 
+\index{Client@{Client}!Init@{Init}}
+\index{Init@{Init}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Client\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes game sequence. 
+
+Sends empty packet to server to join a game. After that sends packet with L number to set game range. If everything goes right, function calls next phase which is \mbox{\hyperlink{class_client_acca1cb65811dde32938f8a3149b6e0d1}{Send\+L()}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_client_acca1cb65811dde32938f8a3149b6e0d1}{Send\+L()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_client_a11b6e7072e7603032be9fd3745ce1cc4}\label{class_client_a11b6e7072e7603032be9fd3745ce1cc4}} 
+\index{Client@{Client}!PlayGame@{PlayGame}}
+\index{PlayGame@{PlayGame}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{PlayGame()}{PlayGame()}}
+{\footnotesize\ttfamily void Client\+::\+Play\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Manages gameplay phase. 
+
+Receives game range, then in loop received packet is checked for operation and answer values. If operation equals \textquotesingle{}game\+End\textquotesingle{} game is finished and program ends its run. Otherwise it is checked if answer was wrong, out of range or if it was given during other client\textquotesingle{}s turn. In every loop repeat user enters new number from game range and counter is being updated. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_client_a359739519699ffbe1d14ccc891c8bf02}{Send\+Packet()}}, \mbox{\hyperlink{class_client_a52be591a9f20eafe3ab4c7e5598665ad}{Receive\+Packet()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_client_a52be591a9f20eafe3ab4c7e5598665ad}\label{class_client_a52be591a9f20eafe3ab4c7e5598665ad}} 
+\index{Client@{Client}!ReceivePacket@{ReceivePacket}}
+\index{ReceivePacket@{ReceivePacket}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{ReceivePacket()}{ReceivePacket()}}
+{\footnotesize\ttfamily void Client\+::\+Receive\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Receives packet. 
+
+Waits for packet to receive, then applies new values to class fields, sends his acknowledgement and prints content. \begin{DoxySeeAlso}{See also}
+Prepare\+After\+Receive(), \mbox{\hyperlink{class_client_a54794620e741e612561da434f95762ab}{Send\+Ack()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_client_a54794620e741e612561da434f95762ab}\label{class_client_a54794620e741e612561da434f95762ab}} 
+\index{Client@{Client}!SendAck@{SendAck}}
+\index{SendAck@{SendAck}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{SendAck()}{SendAck()}}
+{\footnotesize\ttfamily void Client\+::\+Send\+Ack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sends acknowledgement to client. 
+
+Sets answer field to A\+CK, sends packet and sets answer field back to what it was set before. Function also prints content of packet if it was sent succesfully or an error message otherwise. \mbox{\Hypertarget{class_client_acca1cb65811dde32938f8a3149b6e0d1}\label{class_client_acca1cb65811dde32938f8a3149b6e0d1}} 
+\index{Client@{Client}!SendL@{SendL}}
+\index{SendL@{SendL}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{SendL()}{SendL()}}
+{\footnotesize\ttfamily void Client\+::\+SendL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sends L number to server. 
+
+Gets a number that belongs $<$0, 255$>$ from user and sends it to server after changing operation field to \textquotesingle{}sending\+Number\textquotesingle{} and answer field to \textquotesingle{}sendingL\textquotesingle{}. After that function waits for information about game begin from server when \mbox{\hyperlink{class_client_a11b6e7072e7603032be9fd3745ce1cc4}{Play\+Game()}} is called. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_client_a11b6e7072e7603032be9fd3745ce1cc4}{Play\+Game()}}, \mbox{\hyperlink{class_client_a359739519699ffbe1d14ccc891c8bf02}{Send\+Packet()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_client_a359739519699ffbe1d14ccc891c8bf02}\label{class_client_a359739519699ffbe1d14ccc891c8bf02}} 
+\index{Client@{Client}!SendPacket@{SendPacket}}
+\index{SendPacket@{SendPacket}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{SendPacket()}{SendPacket()}}
+{\footnotesize\ttfamily void Client\+::\+Send\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sends packet to client. 
+
+Sends previously set packet to client with given session\+ID. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Session\+ID of client to which packet is being sent. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_client_a87a08064c88cbdbe8220d11d6d01eb7c}\label{class_client_a87a08064c88cbdbe8220d11d6d01eb7c}} 
+\index{Client@{Client}!answer@{answer}}
+\index{answer@{answer}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{answer}{answer}}
+{\footnotesize\ttfamily sf\+::\+Uint8 \mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}{Client\+::answer}}}
+
+\mbox{\Hypertarget{class_client_a399299a8f9fe8b014b9b24385cf827c3}\label{class_client_a399299a8f9fe8b014b9b24385cf827c3}} 
+\index{Client@{Client}!clientIP@{clientIP}}
+\index{clientIP@{clientIP}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{clientIP}{clientIP}}
+{\footnotesize\ttfamily sf\+::\+Ip\+Address Client\+::client\+IP = \char`\"{}169.\+254.\+247.\+66\char`\"{}}
+
+\mbox{\Hypertarget{class_client_aa42a2692e6aec62bca89e7c7559d1a46}\label{class_client_aa42a2692e6aec62bca89e7c7559d1a46}} 
+\index{Client@{Client}!clientSocket@{clientSocket}}
+\index{clientSocket@{clientSocket}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{clientSocket}{clientSocket}}
+{\footnotesize\ttfamily sf\+::\+Udp\+Socket Client\+::client\+Socket}
+
+\mbox{\Hypertarget{class_client_a74f7768f7785f2dfefbb2b052010c475}\label{class_client_a74f7768f7785f2dfefbb2b052010c475}} 
+\index{Client@{Client}!counterOverflow@{counterOverflow}}
+\index{counterOverflow@{counterOverflow}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{counterOverflow}{counterOverflow}}
+{\footnotesize\ttfamily int Client\+::counter\+Overflow = 0}
+
+\mbox{\Hypertarget{class_client_aaf1f10098987626dc6eba0504528549d}\label{class_client_aaf1f10098987626dc6eba0504528549d}} 
+\index{Client@{Client}!operation@{operation}}
+\index{operation@{operation}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{operation}{operation}}
+{\footnotesize\ttfamily sf\+::\+Uint8 \mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}{Client\+::operation}}}
+
+\mbox{\Hypertarget{class_client_afe98ae066f7dd58e8cf403cbfc847f3e}\label{class_client_afe98ae066f7dd58e8cf403cbfc847f3e}} 
+\index{Client@{Client}!packet@{packet}}
+\index{packet@{packet}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{packet}{packet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_packet}{Packet}} Client\+::packet}
+
+\mbox{\Hypertarget{class_client_a7b47c29b48f3a2eb5bf4e6d7e60e0d9f}\label{class_client_a7b47c29b48f3a2eb5bf4e6d7e60e0d9f}} 
+\index{Client@{Client}!rangeBegin@{rangeBegin}}
+\index{rangeBegin@{rangeBegin}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{rangeBegin}{rangeBegin}}
+{\footnotesize\ttfamily int Client\+::range\+Begin}
+
+\mbox{\Hypertarget{class_client_a7ed7c5741aa95376095b1c8d71164239}\label{class_client_a7ed7c5741aa95376095b1c8d71164239}} 
+\index{Client@{Client}!rangeEnd@{rangeEnd}}
+\index{rangeEnd@{rangeEnd}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{rangeEnd}{rangeEnd}}
+{\footnotesize\ttfamily int Client\+::range\+End}
+
+\mbox{\Hypertarget{class_client_a4f1a2d4904133226474bac377338bfd3}\label{class_client_a4f1a2d4904133226474bac377338bfd3}} 
+\index{Client@{Client}!serverIP@{serverIP}}
+\index{serverIP@{serverIP}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{serverIP}{serverIP}}
+{\footnotesize\ttfamily sf\+::\+Ip\+Address Client\+::server\+IP}
+
+\mbox{\Hypertarget{class_client_ab93dfe4f9ac1878682378294093492eb}\label{class_client_ab93dfe4f9ac1878682378294093492eb}} 
+\index{Client@{Client}!serverPort@{serverPort}}
+\index{serverPort@{serverPort}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{serverPort}{serverPort}}
+{\footnotesize\ttfamily unsigned short Client\+::server\+Port}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_client_8h}{Client.\+h}}\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_client_8cpp}{Client.\+cpp}}\end{DoxyCompactItemize}

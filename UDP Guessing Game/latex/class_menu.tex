@@ -1,0 +1,87 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{class_menu}{Menu}} constructor. Displays information about possible choose options. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_menu_a831387f51358cfb88cd018e1777bc980}{$\sim$\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{class_menu}{Menu}} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a6ae6d9f3d94b39609199f5e41209a671}{server\+Handling}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_server}{Server}}\textquotesingle{}s menu, creates new \mbox{\hyperlink{class_server}{Server}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_afc1b43fb70ffbbfee64babea30dc2e4a}{client\+Handling}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_client}{Client}}\textquotesingle{}s menu, creates new \mbox{\hyperlink{class_client}{Client}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_ae1ec62e738dda7faaaec850bd0b58ffe}{start}} ()
+\begin{DoxyCompactList}\small\item\em Starts choosed program (client/server). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_menu_ad466dd83355124a6ed958430450bfe94}\label{class_menu_ad466dd83355124a6ed958430450bfe94}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{class_menu}{Menu}} constructor. Displays information about possible choose options. 
+
+\mbox{\Hypertarget{class_menu_a831387f51358cfb88cd018e1777bc980}\label{class_menu_a831387f51358cfb88cd018e1777bc980}} 
+\index{Menu@{Menu}!````~Menu@{$\sim$Menu}}
+\index{````~Menu@{$\sim$Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{$\sim$Menu()}{~Menu()}}
+{\footnotesize\ttfamily Menu\+::$\sim$\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{class_menu}{Menu}} destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_afc1b43fb70ffbbfee64babea30dc2e4a}\label{class_menu_afc1b43fb70ffbbfee64babea30dc2e4a}} 
+\index{Menu@{Menu}!clientHandling@{clientHandling}}
+\index{clientHandling@{clientHandling}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{clientHandling()}{clientHandling()}}
+{\footnotesize\ttfamily void Menu\+::client\+Handling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_client}{Client}}\textquotesingle{}s menu, creates new \mbox{\hyperlink{class_client}{Client}} object. 
+
+Asks user for server IP and port. Creates new \mbox{\hyperlink{class_client}{Client}} object with given values and calls Init() to start program. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_client_a9e0283c625e8152b8b85bf6528375357}{Client\+::\+Init()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_menu_a6ae6d9f3d94b39609199f5e41209a671}\label{class_menu_a6ae6d9f3d94b39609199f5e41209a671}} 
+\index{Menu@{Menu}!serverHandling@{serverHandling}}
+\index{serverHandling@{serverHandling}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{serverHandling()}{serverHandling()}}
+{\footnotesize\ttfamily void Menu\+::server\+Handling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_server}{Server}}\textquotesingle{}s menu, creates new \mbox{\hyperlink{class_server}{Server}} object. 
+
+Creates new \mbox{\hyperlink{class_client}{Client}} object with given values and calls Init() to start program. \mbox{\Hypertarget{class_menu_ae1ec62e738dda7faaaec850bd0b58ffe}\label{class_menu_ae1ec62e738dda7faaaec850bd0b58ffe}} 
+\index{Menu@{Menu}!start@{start}}
+\index{start@{start}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Menu\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts choosed program (client/server). 
+
+Checks if entered number is right. If not program asks for other choice. After enetering right number, program starts choosed part which is server or client. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_menu_afc1b43fb70ffbbfee64babea30dc2e4a}{client\+Handling()}}, \mbox{\hyperlink{class_menu_a6ae6d9f3d94b39609199f5e41209a671}{server\+Handling()}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_menu_8h}{Menu.\+h}}\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_menu_8cpp}{Menu.\+cpp}}\end{DoxyCompactItemize}

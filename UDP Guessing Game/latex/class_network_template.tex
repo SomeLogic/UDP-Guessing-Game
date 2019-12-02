@@ -1,0 +1,180 @@
+\hypertarget{class_network_template}{}\doxysection{Network\+Template Class Reference}
+\label{class_network_template}\index{NetworkTemplate@{NetworkTemplate}}
+
+
+{\ttfamily \#include $<$Network\+Template.\+h$>$}
+
+Inheritance diagram for Network\+Template\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network_template}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}{operation}} \{ \newline
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cae2d00d880e83206cb8da000ec9aeb77c}{getting\+ID}} = 0, 
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2caf2970ba08e234e6c6dae66ec99e8388f}{waiting\+ForL}} = 1, 
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca530f092acf510f94f24f87d03a761e04}{sending\+Number}} = 2, 
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cabfa7c94df0f9db8fc7529e42a3a2c072}{game\+Begin}} = 3, 
+\newline
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca02edaa789ab1556616c6d39cbf7205b0}{playing}} = 4, 
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cae819049ec8ca158747b2900633bcc3fd}{too\+Many\+Players}} = 7, 
+\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca347a0366e640fbe935c589b6c9844ae4}{game\+End}} = 15
+ \}
+\item 
+enum \mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}{answer}} \{ \newline
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ae9766d109622bed080ca0760f9d05ce3}{get\+ID}} = 0, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ac8bf2c5b30470e1cc8afeca4f32b9678}{id\+Assigned}} = 1, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a13991e777766473076c81b8e9eac6267}{out\+Of\+Range}} = 2, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a681dfc70149481023da9365e258dd8eb}{win}} = 3, 
+\newline
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a1d4bea243efc5679ddecd36ff4a4603e}{not\+Your\+Turn}} = 4, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ab1cb86f78a6e755c6a44b4e43523e568}{your\+Turn}} = 5, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4afa83582d13146ba0030018d529bdb779}{sendingL}} = 6, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a2cdfe76b5d020d14a5852480fa907387}{sending\+Guess}} = 7, 
+\newline
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ad8a70ba02bf612d163f3510a9083b5f9}{sending\+HigherL}} = 8, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a3cabe3af5f8b191a4b40c185bcd8684a}{sending\+LowerL}} = 9, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a34bbab743595394d44f38c8a2a9f12b4}{lose}} = 12, 
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a0e23c123fb07d97c64aaa8906f3ecdc8}{wrong}} = 13, 
+\newline
+\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a7c51eb5c793fdbc097976a2cb71c0169}{ack}} = 15
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_network_template_a32a9bd5d66f28b6ed35a309f343866a4}{Network\+Template}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{class_network_template}{Network\+Template}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_network_template_adb1ead9501d6a9c6c3248be6f243998a}{$\sim$\+Network\+Template}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{class_network_template}{Network\+Template}} destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}} 
+\index{NetworkTemplate@{NetworkTemplate}!answer@{answer}}
+\index{answer@{answer}!NetworkTemplate@{NetworkTemplate}}
+\doxysubsubsection{\texorpdfstring{answer}{answer}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}{Network\+Template\+::answer}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{getID@{getID}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!getID@{getID}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ae9766d109622bed080ca0760f9d05ce3}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ae9766d109622bed080ca0760f9d05ce3}} 
+get\+ID&0000 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{idAssigned@{idAssigned}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!idAssigned@{idAssigned}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ac8bf2c5b30470e1cc8afeca4f32b9678}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ac8bf2c5b30470e1cc8afeca4f32b9678}} 
+id\+Assigned&0001 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{outOfRange@{outOfRange}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!outOfRange@{outOfRange}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a13991e777766473076c81b8e9eac6267}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a13991e777766473076c81b8e9eac6267}} 
+out\+Of\+Range&0010 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{win@{win}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!win@{win}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a681dfc70149481023da9365e258dd8eb}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a681dfc70149481023da9365e258dd8eb}} 
+win&0011 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{notYourTurn@{notYourTurn}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!notYourTurn@{notYourTurn}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a1d4bea243efc5679ddecd36ff4a4603e}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a1d4bea243efc5679ddecd36ff4a4603e}} 
+not\+Your\+Turn&0100 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{yourTurn@{yourTurn}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!yourTurn@{yourTurn}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ab1cb86f78a6e755c6a44b4e43523e568}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ab1cb86f78a6e755c6a44b4e43523e568}} 
+your\+Turn&0101 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sendingL@{sendingL}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!sendingL@{sendingL}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4afa83582d13146ba0030018d529bdb779}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4afa83582d13146ba0030018d529bdb779}} 
+sendingL&0110 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sendingGuess@{sendingGuess}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!sendingGuess@{sendingGuess}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a2cdfe76b5d020d14a5852480fa907387}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a2cdfe76b5d020d14a5852480fa907387}} 
+sending\+Guess&0111 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sendingHigherL@{sendingHigherL}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!sendingHigherL@{sendingHigherL}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ad8a70ba02bf612d163f3510a9083b5f9}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4ad8a70ba02bf612d163f3510a9083b5f9}} 
+sending\+HigherL&1000 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sendingLowerL@{sendingLowerL}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!sendingLowerL@{sendingLowerL}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a3cabe3af5f8b191a4b40c185bcd8684a}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a3cabe3af5f8b191a4b40c185bcd8684a}} 
+sending\+LowerL&1001 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lose@{lose}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!lose@{lose}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a34bbab743595394d44f38c8a2a9f12b4}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a34bbab743595394d44f38c8a2a9f12b4}} 
+lose&1100 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wrong@{wrong}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!wrong@{wrong}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a0e23c123fb07d97c64aaa8906f3ecdc8}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a0e23c123fb07d97c64aaa8906f3ecdc8}} 
+wrong&1101 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ack@{ack}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!ack@{ack}}}\mbox{\Hypertarget{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a7c51eb5c793fdbc097976a2cb71c0169}\label{class_network_template_a83a2d59e209e3b292da3082d14de5ab4a7c51eb5c793fdbc097976a2cb71c0169}} 
+ack&1111 \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}} 
+\index{NetworkTemplate@{NetworkTemplate}!operation@{operation}}
+\index{operation@{operation}!NetworkTemplate@{NetworkTemplate}}
+\doxysubsubsection{\texorpdfstring{operation}{operation}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}{Network\+Template\+::operation}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gettingID@{gettingID}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!gettingID@{gettingID}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cae2d00d880e83206cb8da000ec9aeb77c}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cae2d00d880e83206cb8da000ec9aeb77c}} 
+getting\+ID&0000 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{waitingForL@{waitingForL}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!waitingForL@{waitingForL}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2caf2970ba08e234e6c6dae66ec99e8388f}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2caf2970ba08e234e6c6dae66ec99e8388f}} 
+waiting\+ForL&0001 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sendingNumber@{sendingNumber}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!sendingNumber@{sendingNumber}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca530f092acf510f94f24f87d03a761e04}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca530f092acf510f94f24f87d03a761e04}} 
+sending\+Number&0010 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gameBegin@{gameBegin}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!gameBegin@{gameBegin}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cabfa7c94df0f9db8fc7529e42a3a2c072}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cabfa7c94df0f9db8fc7529e42a3a2c072}} 
+game\+Begin&0011 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{playing@{playing}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!playing@{playing}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca02edaa789ab1556616c6d39cbf7205b0}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca02edaa789ab1556616c6d39cbf7205b0}} 
+playing&0100 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tooManyPlayers@{tooManyPlayers}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!tooManyPlayers@{tooManyPlayers}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cae819049ec8ca158747b2900633bcc3fd}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2cae819049ec8ca158747b2900633bcc3fd}} 
+too\+Many\+Players&0111 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{gameEnd@{gameEnd}!NetworkTemplate@{NetworkTemplate}}\index{NetworkTemplate@{NetworkTemplate}!gameEnd@{gameEnd}}}\mbox{\Hypertarget{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca347a0366e640fbe935c589b6c9844ae4}\label{class_network_template_a5da11e3c185c9cf1676a3da68786fb2ca347a0366e640fbe935c589b6c9844ae4}} 
+game\+End&1111 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_network_template_a32a9bd5d66f28b6ed35a309f343866a4}\label{class_network_template_a32a9bd5d66f28b6ed35a309f343866a4}} 
+\index{NetworkTemplate@{NetworkTemplate}!NetworkTemplate@{NetworkTemplate}}
+\index{NetworkTemplate@{NetworkTemplate}!NetworkTemplate@{NetworkTemplate}}
+\doxysubsubsection{\texorpdfstring{NetworkTemplate()}{NetworkTemplate()}}
+{\footnotesize\ttfamily Network\+Template\+::\+Network\+Template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{class_network_template}{Network\+Template}} constructor. 
+
+\mbox{\Hypertarget{class_network_template_adb1ead9501d6a9c6c3248be6f243998a}\label{class_network_template_adb1ead9501d6a9c6c3248be6f243998a}} 
+\index{NetworkTemplate@{NetworkTemplate}!````~NetworkTemplate@{$\sim$NetworkTemplate}}
+\index{````~NetworkTemplate@{$\sim$NetworkTemplate}!NetworkTemplate@{NetworkTemplate}}
+\doxysubsubsection{\texorpdfstring{$\sim$NetworkTemplate()}{~NetworkTemplate()}}
+{\footnotesize\ttfamily Network\+Template\+::$\sim$\+Network\+Template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{class_network_template}{Network\+Template}} destructor. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_network_template_8h}{Network\+Template.\+h}}\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_network_template_8cpp}{Network\+Template.\+cpp}}\end{DoxyCompactItemize}

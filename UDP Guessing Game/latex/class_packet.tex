@@ -1,0 +1,293 @@
+\hypertarget{class_packet}{}\doxysection{Packet Class Reference}
+\label{class_packet}\index{Packet@{Packet}}
+
+
+{\ttfamily \#include $<$Packet.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_packet_aabcfb963c0d5bc0fa554668f92989622}{Packet}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{class_packet}{Packet}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_packet_a48938391fb7e07460bb0e01198ae5ede}{$\sim$\+Packet}} ()
+\begin{DoxyCompactList}\small\item\em Default \mbox{\hyperlink{class_packet}{Packet}} destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_ab6acf904f48c33293801537985a596df}{set\+Operation\+Field}} (\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}{Network\+Template\+::operation}} operation)
+\begin{DoxyCompactList}\small\item\em Sets operation field to given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_a292af4b88460167f618edc0d22c7d2e9}{set\+Operation\+Field}} (sf\+::\+Uint8 operation)
+\begin{DoxyCompactList}\small\item\em Sets operation field to given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_a367dc783cb6ee2aa956c117c14b79ccb}{set\+Session\+ID}} (sf\+::\+Uint8 id)
+\begin{DoxyCompactList}\small\item\em Sets session\+ID field to given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_af1a44074efbfbd540aefb21304a2774f}{set\+Answer\+Field}} (\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}{Network\+Template\+::answer}} answer)
+\begin{DoxyCompactList}\small\item\em Sets answer field to given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_a6d7918a17b771b55c5d116e12dfdddb9}{set\+Answer\+Field}} (sf\+::\+Uint8 answer)
+\begin{DoxyCompactList}\small\item\em Sets answer field to given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_a715f1267cd77b0b4ac2d74057ab65143}{set\+Counter}} (sf\+::\+Uint8 counter)
+\begin{DoxyCompactList}\small\item\em Sets counter field to given value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_af411176a0346adfbafe78d9126b466f9}{set\+Number\+Field}} (sf\+::\+Uint8 number)
+\begin{DoxyCompactList}\small\item\em Sets number field to given value. \end{DoxyCompactList}\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_ada92d5bec6fa881b35e38126c6e3e4d5}{get\+Operation\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Gets current operation field. \end{DoxyCompactList}\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_a1957964ed82c1d9dc2f37a23559c98df}{get\+Session\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets current session\+ID field. \end{DoxyCompactList}\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_aae8b5c7aaff264ab53c794a36df65924}{get\+Answer\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Gets current answer field. \end{DoxyCompactList}\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_af6c53b66e60f313a8adbccbb53e5afee}{get\+Counter}} ()
+\begin{DoxyCompactList}\small\item\em Gets current counter field. \end{DoxyCompactList}\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_abf3e47628bd1e36d34e7af3bfa2b9f69}{get\+Number\+Field}} ()
+\begin{DoxyCompactList}\small\item\em Gets current number field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_a1b83ba197498860b0cbe718968f79241}{Prepare\+After\+Receive}} ()
+\begin{DoxyCompactList}\small\item\em Prepares packet to use after receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_packet_a83929d50100eefcc866345462fb86d58}{Prepare\+To\+Send}} ()
+\begin{DoxyCompactList}\small\item\em Prepares packet to send before receive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ sf\+::\+Uint8, 2 $>$ \mbox{\hyperlink{class_packet_ad26931050ea0d94c8321183f5e0bbd5b}{header}} = \{ 0, 0 \}
+\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_a503e7226311cf822147a02a9901681c8}{data}} = \{ 0 \}
+\item 
+sf\+::\+Uint8 \mbox{\hyperlink{class_packet_adb59990efbe3441896b6d7f10119fba3}{content}} \mbox{[}3\mbox{]} = \{ 0, 0, 0 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_packet_aabcfb963c0d5bc0fa554668f92989622}\label{class_packet_aabcfb963c0d5bc0fa554668f92989622}} 
+\index{Packet@{Packet}!Packet@{Packet}}
+\index{Packet@{Packet}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{Packet()}{Packet()}}
+{\footnotesize\ttfamily Packet\+::\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{class_packet}{Packet}} constructor. 
+
+\mbox{\Hypertarget{class_packet_a48938391fb7e07460bb0e01198ae5ede}\label{class_packet_a48938391fb7e07460bb0e01198ae5ede}} 
+\index{Packet@{Packet}!````~Packet@{$\sim$Packet}}
+\index{````~Packet@{$\sim$Packet}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{$\sim$Packet()}{~Packet()}}
+{\footnotesize\ttfamily Packet\+::$\sim$\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default \mbox{\hyperlink{class_packet}{Packet}} destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_packet_aae8b5c7aaff264ab53c794a36df65924}\label{class_packet_aae8b5c7aaff264ab53c794a36df65924}} 
+\index{Packet@{Packet}!getAnswerField@{getAnswerField}}
+\index{getAnswerField@{getAnswerField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{getAnswerField()}{getAnswerField()}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::get\+Answer\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current answer field. 
+
+Gets bits 5-\/8 of first header byte. \begin{DoxyReturn}{Returns}
+Uint8 representing current answer value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_packet_af6c53b66e60f313a8adbccbb53e5afee}\label{class_packet_af6c53b66e60f313a8adbccbb53e5afee}} 
+\index{Packet@{Packet}!getCounter@{getCounter}}
+\index{getCounter@{getCounter}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{getCounter()}{getCounter()}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::get\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current counter field. 
+
+Gets bits 1-\/4 of second header byte. \begin{DoxyReturn}{Returns}
+Uint8 representing current counter value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_packet_abf3e47628bd1e36d34e7af3bfa2b9f69}\label{class_packet_abf3e47628bd1e36d34e7af3bfa2b9f69}} 
+\index{Packet@{Packet}!getNumberField@{getNumberField}}
+\index{getNumberField@{getNumberField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{getNumberField()}{getNumberField()}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::get\+Number\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current number field. 
+
+Gets third byte of packet. \begin{DoxyReturn}{Returns}
+Uint8 representing current number value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_packet_ada92d5bec6fa881b35e38126c6e3e4d5}\label{class_packet_ada92d5bec6fa881b35e38126c6e3e4d5}} 
+\index{Packet@{Packet}!getOperationField@{getOperationField}}
+\index{getOperationField@{getOperationField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{getOperationField()}{getOperationField()}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::get\+Operation\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current operation field. 
+
+Gets bits 1-\/4 of first header byte. \begin{DoxyReturn}{Returns}
+Uint8 representing current operation value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_packet_a1957964ed82c1d9dc2f37a23559c98df}\label{class_packet_a1957964ed82c1d9dc2f37a23559c98df}} 
+\index{Packet@{Packet}!getSessionID@{getSessionID}}
+\index{getSessionID@{getSessionID}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{getSessionID()}{getSessionID()}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::get\+Session\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current session\+ID field. 
+
+Gets bits 1-\/4 of second header byte. \begin{DoxyReturn}{Returns}
+Uint8 representing current id value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_packet_a1b83ba197498860b0cbe718968f79241}\label{class_packet_a1b83ba197498860b0cbe718968f79241}} 
+\index{Packet@{Packet}!PrepareAfterReceive@{PrepareAfterReceive}}
+\index{PrepareAfterReceive@{PrepareAfterReceive}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{PrepareAfterReceive()}{PrepareAfterReceive()}}
+{\footnotesize\ttfamily void Packet\+::\+Prepare\+After\+Receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares packet to use after receive. 
+
+Takes data from content and puts it inside containers header and data to make operations on packet easier. \mbox{\Hypertarget{class_packet_a83929d50100eefcc866345462fb86d58}\label{class_packet_a83929d50100eefcc866345462fb86d58}} 
+\index{Packet@{Packet}!PrepareToSend@{PrepareToSend}}
+\index{PrepareToSend@{PrepareToSend}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{PrepareToSend()}{PrepareToSend()}}
+{\footnotesize\ttfamily void Packet\+::\+Prepare\+To\+Send (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares packet to send before receive. 
+
+Puts data from header and data to content which is then sent to a receiver. \mbox{\Hypertarget{class_packet_af1a44074efbfbd540aefb21304a2774f}\label{class_packet_af1a44074efbfbd540aefb21304a2774f}} 
+\index{Packet@{Packet}!setAnswerField@{setAnswerField}}
+\index{setAnswerField@{setAnswerField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setAnswerField()}{setAnswerField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Packet\+::set\+Answer\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_network_template_a83a2d59e209e3b292da3082d14de5ab4}{Network\+Template\+::answer}}}]{answer }\end{DoxyParamCaption})}
+
+
+
+Sets answer field to given value. 
+
+Sets 4 bytes from the right to 0, then adds it (OR) to id value. 
+\begin{DoxyParams}{Parameters}
+{\em answer} & Enum value defines current answer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_packet_a6d7918a17b771b55c5d116e12dfdddb9}\label{class_packet_a6d7918a17b771b55c5d116e12dfdddb9}} 
+\index{Packet@{Packet}!setAnswerField@{setAnswerField}}
+\index{setAnswerField@{setAnswerField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setAnswerField()}{setAnswerField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Packet\+::set\+Answer\+Field (\begin{DoxyParamCaption}\item[{sf\+::\+Uint8}]{answer }\end{DoxyParamCaption})}
+
+
+
+Sets answer field to given value. 
+
+Sets 4 bytes from the right to 0, then adds it (OR) to id value. 
+\begin{DoxyParams}{Parameters}
+{\em answer} & Uint8 value defines current answer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_packet_a715f1267cd77b0b4ac2d74057ab65143}\label{class_packet_a715f1267cd77b0b4ac2d74057ab65143}} 
+\index{Packet@{Packet}!setCounter@{setCounter}}
+\index{setCounter@{setCounter}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setCounter()}{setCounter()}}
+{\footnotesize\ttfamily void Packet\+::set\+Counter (\begin{DoxyParamCaption}\item[{sf\+::\+Uint8}]{counter }\end{DoxyParamCaption})}
+
+
+
+Sets counter field to given value. 
+
+Sets 4 bytes from the right to 0, then adds it (OR) to counter value. 
+\begin{DoxyParams}{Parameters}
+{\em counter} & Uint8 value defines current counter value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_packet_af411176a0346adfbafe78d9126b466f9}\label{class_packet_af411176a0346adfbafe78d9126b466f9}} 
+\index{Packet@{Packet}!setNumberField@{setNumberField}}
+\index{setNumberField@{setNumberField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setNumberField()}{setNumberField()}}
+{\footnotesize\ttfamily void Packet\+::set\+Number\+Field (\begin{DoxyParamCaption}\item[{sf\+::\+Uint8}]{number }\end{DoxyParamCaption})}
+
+
+
+Sets number field to given value. 
+
+Sets third byte of packet to given value. 
+\begin{DoxyParams}{Parameters}
+{\em number} & Uint8 value defines number value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_packet_ab6acf904f48c33293801537985a596df}\label{class_packet_ab6acf904f48c33293801537985a596df}} 
+\index{Packet@{Packet}!setOperationField@{setOperationField}}
+\index{setOperationField@{setOperationField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setOperationField()}{setOperationField()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Packet\+::set\+Operation\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_network_template_a5da11e3c185c9cf1676a3da68786fb2c}{Network\+Template\+::operation}}}]{operation }\end{DoxyParamCaption})}
+
+
+
+Sets operation field to given value. 
+
+Sets 4 bytes from the left to 0, then adds it (OR) to operation value moved by 4 bits to the left. 
+\begin{DoxyParams}{Parameters}
+{\em operation} & Enum value defines current operation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_packet_a292af4b88460167f618edc0d22c7d2e9}\label{class_packet_a292af4b88460167f618edc0d22c7d2e9}} 
+\index{Packet@{Packet}!setOperationField@{setOperationField}}
+\index{setOperationField@{setOperationField}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setOperationField()}{setOperationField()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Packet\+::set\+Operation\+Field (\begin{DoxyParamCaption}\item[{sf\+::\+Uint8}]{operation }\end{DoxyParamCaption})}
+
+
+
+Sets operation field to given value. 
+
+Sets 4 bits from the left to 0, then adds it (OR) to operation value moved by 4 bits to the left. 
+\begin{DoxyParams}{Parameters}
+{\em operation} & Uint8 value defines current operation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_packet_a367dc783cb6ee2aa956c117c14b79ccb}\label{class_packet_a367dc783cb6ee2aa956c117c14b79ccb}} 
+\index{Packet@{Packet}!setSessionID@{setSessionID}}
+\index{setSessionID@{setSessionID}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{setSessionID()}{setSessionID()}}
+{\footnotesize\ttfamily void Packet\+::set\+Session\+ID (\begin{DoxyParamCaption}\item[{sf\+::\+Uint8}]{id }\end{DoxyParamCaption})}
+
+
+
+Sets session\+ID field to given value. 
+
+Sets 4 bytes from the left to 0, then adds it (OR) to id value moved by 4 bits to the left. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Uint8 value defines current id value. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_packet_adb59990efbe3441896b6d7f10119fba3}\label{class_packet_adb59990efbe3441896b6d7f10119fba3}} 
+\index{Packet@{Packet}!content@{content}}
+\index{content@{content}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::content\mbox{[}3\mbox{]} = \{ 0, 0, 0 \}}
+
+\mbox{\Hypertarget{class_packet_a503e7226311cf822147a02a9901681c8}\label{class_packet_a503e7226311cf822147a02a9901681c8}} 
+\index{Packet@{Packet}!data@{data}}
+\index{data@{data}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily sf\+::\+Uint8 Packet\+::data = \{ 0 \}}
+
+\mbox{\Hypertarget{class_packet_ad26931050ea0d94c8321183f5e0bbd5b}\label{class_packet_ad26931050ea0d94c8321183f5e0bbd5b}} 
+\index{Packet@{Packet}!header@{header}}
+\index{header@{header}!Packet@{Packet}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily std\+::array$<$sf\+::\+Uint8, 2$>$ Packet\+::header = \{ 0, 0 \}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_packet_8h}{Packet.\+h}}\item 
+C\+:/\+Users/\+Robert Szczepański/source/repos/\+U\+D\+P Guessing Game/\+U\+D\+P Guessing Game/\mbox{\hyperlink{_packet_8cpp}{Packet.\+cpp}}\end{DoxyCompactItemize}

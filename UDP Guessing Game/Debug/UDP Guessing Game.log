@@ -1,0 +1,7 @@
+﻿  Main.cpp
+c:\users\robert szczepański\source\repos\udp guessing game\udp guessing game\networktemplate.h(11): error C2653: 'sf': is not a class or namespace name
+c:\users\robert szczepański\source\repos\udp guessing game\udp guessing game\networktemplate.h(11): error C2061: syntax error: identifier 'uint8'
+  NetworkTemplate.cpp
+c:\users\robert szczepański\source\repos\udp guessing game\udp guessing game\networktemplate.h(11): error C2653: 'sf': is not a class or namespace name
+c:\users\robert szczepański\source\repos\udp guessing game\udp guessing game\networktemplate.h(11): error C2061: syntax error: identifier 'uint8'
+  Generating Code...
