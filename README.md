@@ -32,3 +32,6 @@ Answer field:
 - 1101 – wrong = 13,
 - 1111 – ACK = 15.
  
+Credits:
+Robert Szczepański - /SomeLogic
+Mateusz Sierszulski - /mts-srs
